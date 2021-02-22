@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-project1",
+  "version": "1.0.0",
+  "description": "bootstrap portfolio project",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nabeel areiqat",
+  "license": "ISC"
+}
