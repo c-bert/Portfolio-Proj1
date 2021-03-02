@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid {
+    background-color: rgba(0,0,0,1);
+}
+
+.navbar-dark {
+    background-color: rgba(0,0,0,0);
+    color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar-dark .navbar-brand{
+    color: red;
+    font-size:  35px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 20%;
+    
+
+}
+
+.nav-item {
+    padding: 5px;
+    font-size: 18px;
+
+}
+
+
+.jumbotron{
+   
+    background: url('./img/pp1edited.jpg') no-repeat center center fixed;
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.info-container {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
