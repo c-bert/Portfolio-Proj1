@@ -2,49 +2,146 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container-fluid {
-    background-color: rgba(0,0,0,1);
-}
-
-.navbar-dark {
-    background-color: rgba(0,0,0,0);
-    color: transparent;
+    overflow-x: hidden;
     font-family: 'Ubuntu', sans-serif;
 }
-.navbar-dark .navbar-brand{
-    color: red;
-    font-size:  35px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: 20%;
-    
-
-}
-
-.nav-item {
-    padding: 5px;
-    font-size: 18px;
-
-}
-
-
-.jumbotron{
-   
-    background: url('./img/pp1edited.jpg') no-repeat center center fixed;
-    height: 100vh;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+nav {
+    background: url('img/pp1edited.jpg') no-repeat fixed center;
     background-size: cover;
 }
+.red {
+    color: red;
+}
 
-.info-container {
-    text-align: center;
+.navbar{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 20px 0px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    padding-left: 20px ;
+}
+.navbar-brand {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.navbar-dark{
+    background-color: red;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:#1ebba3 ;
+
+}
+
+.intro-container{
+    background: url('img/pp1edited.jpg') no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.heading-content {
+    position: absolute;
+    top: 40%;
+    left: 50px ;
+    top:200px;
+   
+}
+
+.heading-content h3,h1,p {
+    color: #fff;
+}
+
+.heading-content h5{
+    font-size: 3em;
+    font-weight: 300;
+    font-family: monospace;
+
+}
+
+h1.display-3{
+    font-size: 5rem;
+    font-weight: bold;
     color: white;
+}
+p.lead {
+    font-size: 3rem;
+    overflow: hidden;
+    
 }
 
 
 
+/* about section styling */
+.about {
+    padding: 10px;
+   
+}
 
 
+.about img {
+    
+    box-shadow: 6px 4px 29px -14px rgba(0,0,0,0.75);
+    margin: 20px;
+    border: 6px solid black;
+    border-radius: 5%;
+}
+
+.col-lg-7 p,h1 {
+    color: black;
+}
+.about.container.row.col-lg-7 h1{
+    font-size:3rem;
+    font-weight: 900;
+}
+h3.display-5 {
+    padding: 2px;
+}
+.btn-github,.btn-linkedin {
+    margin-top: 5px;
+}
+
+
+/* Animations */
+
+.pulse a:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);}
+  100% { transform: scale(1); }
+}
+
+/* type animation */
+
+@keyframes blink {
+    0% {background-color: #ccc; }
+    49% {background-color: #ccc; }
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% { background-color: #ccc;}
+}
+
+.typed-text{
+    color: red;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
