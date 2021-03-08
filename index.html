@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./style.css" />
 
@@ -21,55 +22,73 @@
 </head>
 
 <body>
-    <nav role="navigation" class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="pulse"><a class="navbar-brand" href="./index.html">Nabeel <span class="red">Areiqat</span></a></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nabeelNavbar">
+    <!-- navbar -->
+    <section id="header">
+        <nav class="navbar navbar-expand-md navbar-dark sticky" role="navigation">
+            <div class="pulse">
+                <a class="navbar-brand" href="./index.html">Nabeel <span>Areiqat</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nabeelNavbar">
+            <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"></i>Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"></i>Contact</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container-fluid intro-container">
-        <div class="heading-content">
-            <h3>Hello, My name is</h3>
-            <h1 class="display-3"> Nabeel Areiqat</h1>
-            <p class="lead">And I'm a <span class="typed-text"></span><span> &nbsp;</span></p>
+    </section>
 
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button" href="new.html">Contact Me</a>
-            </p>
-            
+    <!-- navbar end -->
+
+    <!-- main/intro sectio -->
+    <section class="main">
+        <div class="container">
+            <div class="text-1">Hello, my name is</div>
+            <div class="text-2">Nabeel Areiqat</div>
+            <div class="text-3">And I'm a <span class="typed-text"></span></div>
         </div>
-    </div>
-    
+    </section>
+    <!-- intro end -->
+
 
     <!-- About Me section -->
     <div id="about" class="container about">
-       
+
+        <div class="row">
+            <div class="col about-title">
+                <h1 class="text-center">About Me</h1>
+            </div>
+
+        </div>
         <div class="row">
             <div class="col-lg-5">
                 <img src="img/hike.jpg" alt="selfie" class="img-fluid">
             </div>
             <div class="col-lg-7">
-                <h1 class="text-center">About Me.</h1>
+
                 <p>I'm a <span class="typed-2"></span><span> &nbsp;</span></p>
-                <p class="py-3 ml-3">I am <span class="font-weight-bold">Nabeel Areiqat </span>and I am a Full-Stack Web developer. I love coding and creating amazing websites! I am looking for a junior developer position or internship.</p>
-                <h3 class="display-5 text-center"> Want to Connect: </h3>
-               
-                
+                <p class="py-3 ml-3">I am <span class="font-weight-bold">Nabeel Areiqat </span>and I am a Full-Stack Web
+                    developer. I love coding and creating amazing websites! I am looking for a junior developer position
+                    or internship.</p>
             </div>
         </div>
     </div>
     <!-- About section End -->
-    
+
     <!-- skills section -->
     <div class="skills container-fluid" id="skills">
         <h2 class="text-center skills-head">-Skills-</h2>
@@ -108,7 +127,7 @@
                 <div class="skills-icon"><i class="fab fa-bootstrap"></i></i></div>
                 <p class="text-light">Bootstrap</p>
             </div>
-           
+
         </div>
     </div>
     <!-- skills section end -->
@@ -117,15 +136,18 @@
 
     <div class="container projects-container" id="projects">
         <div class="row">
-            <div class="col-sm-12 text-center pt-3"><h1 class="skills-head" style="color: black;">-Projects-</h1></div>
+            <div class="col-sm-12 text-center pt-3">
+                <h1 class="skills-head" style="color: black;">-Projects-</h1>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-               <div class="card">
+                <div class="card">
                     <img class="card-img-top" src="img/covid19tracker.PNG" alt="Covid 19 tracker">
                     <div class="card-body">
                         <h5 class="card-title">Covid-19 WorldWide Tracker</h5>
-                        <p class="card-text text-dark">Built a Covid-19 tracker using ReactJs, Material UI and disease.sh API and hosted on google firbase.</p>
+                        <p class="card-text text-dark">Built a Covid-19 tracker using ReactJs, Material UI and
+                            disease.sh API and hosted on google firbase.</p>
                         <a href="https://covid-19tracker-ddfa6.web.app/" class="btn btn-danger">Visit Site</a>
                     </div>
                 </div>
@@ -136,7 +158,8 @@
                     <img class="card-img-top" src="img/netflixUiclone.PNG" alt="Netflix Ui clone">
                     <div class="card-body">
                         <h5 class="card-title">NetFlix UI clone</h5>
-                        <p class="card-text text-dark">Built Netflix front page UI clone using ReactJs and Moviesdb API and hosted on google firebase.</p>
+                        <p class="card-text text-dark">Built Netflix front page UI clone using ReactJs and Moviesdb API
+                            and hosted on google firebase.</p>
                         <a href="https://netflix-clone-75ea7.web.app/" class="btn btn-danger">Visit Site</a>
                     </div>
                 </div>
@@ -146,82 +169,93 @@
                     <img class="card-img-top" src="img/netflixUiclone.PNG" alt="Netflix Ui clone">
                     <div class="card-body">
                         <h5 class="card-title">NetFlix UI clone</h5>
-                        <p class="card-text text-dark">Built Netflix front page UI clone using ReactJs and Moviesdb API and hosted on google firebase.</p>
+                        <p class="card-text text-dark">Built Netflix front page UI clone using ReactJs and Moviesdb API
+                            and hosted on google firebase.</p>
                         <a href="https://netflix-clone-75ea7.web.app/" class="btn btn-danger">Visit Site</a>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- contact me -->
     <div class="container-fluid contact-container" id="contact">
-       
-        <form id="contact-form" method="post" action="contact.php" role="form">
-            <h2 class="text-center">Contact Me!</h2>
-            <div class="messages"></div>
+        <div class="card">
+            <form id="contact-form" method="post" action="contact.php" role="form">
+                <h2 class="text-center">Contact Me!</h2>
+                <div class="messages"></div>
 
-            <div class="controls">
+                <div class="controls">
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class ="col-form-label" for="form_name">Name *</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                            <div class="help-block with-errors"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="col-form-label" for="form_name">Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control"
+                                    placeholder="Please enter your firstname *" required="required"
+                                    data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-form-label" for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control"
+                                    placeholder="Please enter your email *" required="required"
+                                    data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-form-label" for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control"
+                                    placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="col-form-label" for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control"
+                                    placeholder="Message for me *" rows="4" required="required"
+                                    data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="col-form-label" for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="col-form-label" for="form_phone">Phone</label>
-                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="col-form-label" for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
-                    </div>
-                </div>
-            </div>
 
-        </form>
+            </form>
+        </div>
+
     </div>
-    
+
     <footer class="container-fluid">
         <div class="footer-container">
             <div class="row">
-                 <div class="col">
-                     <div class="socials text-center">
+                <div class="col">
+                    <div class="socials text-center">
                         <a class="btn btn-social-icon btn-github" href="http://github.com/nareiqat"><i role="img"
-                        aria-label="GitHub" class="fab fa-github"></i></a>
+                                aria-label="GitHub" class="fab fa-github"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://linkedin.com/in/nareiqat"><i
-                        class="fab fa-linkedin"></i></a>
+                                class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 text-center pt-2">
-                   <span>Created By <a href="index.html">Nabeel Areiqat</a> | <span class="far fa-copyright"></span> 2021 All right reserved.</span>
+                    <span>Created By <a href="index.html">Nabeel Areiqat</a> | <span class="far fa-copyright"></span>
+                        2021 All right reserved.</span>
                 </div>
-               
+
             </div>
         </div>
 

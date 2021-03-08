@@ -1,80 +1,94 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+}
+
+#header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+/* navbar styling */
+#navbar {
+    margin-right: 50px;
+}
+
+.navbar {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 50px;
+}
+
+.navbar-brand span {
+    color: crimson;
+}
+
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    color: azure;
+    padding: 0 30px;
+    font-weight: 500;
+}
+
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+    color:crimson;
+}
+
+
+.sticky{
+    background-color:rgba(0,0,0,0.75);
+    width: 100%;
+}
+
+/* Home */
+
+.main {
+    position:relative;
+    background: url(./img/pp1edited.jpg) no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+    padding: 270px 0 200px;
+
+}
+
+.container {
+    margin-left: 20px;
+    color: #f5f5f5;
+}
+
+.text-1, .text-2, .text-3 {
     font-family: 'Ubuntu', sans-serif;
 }
-nav {
-    background: url('img/pp1edited.jpg') no-repeat fixed center;
-    background-size: cover;
-}
-.red {
-    color: red;
+
+.main .container .text-1 {
+    font-size: 27px;
 }
 
-.navbar{
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    padding: 20px 0px;
+.main .container .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-    color: #fff;
-    padding-left: 20px ;
-}
-.navbar-brand {
-    font-size: 2rem;
-    margin-left: 20px;
-}
-
-.navbar-dark{
-    background-color: red;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-    color:#1ebba3 ;
-
-}
-
-.intro-container{
-    background: url('img/pp1edited.jpg') no-repeat fixed center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.heading-content {
-    position: absolute;
-    top: 40%;
-    left: 50px ;
-    top:200px;
+.main .container .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
    
 }
-
-.heading-content h3,h1,p {
-    color: #fff;
-}
-
-.heading-content h5{
-    font-size: 3em;
-    font-weight: 300;
-    font-family: monospace;
-
-}
-
-h1.display-3{
-    font-size: 5rem;
-    font-weight: bold;
-    color: white;
-}
-p.lead {
-    font-size: 3rem;
-    overflow: hidden;
-    
-}
-
 
 
 /* about section styling */
@@ -179,12 +193,9 @@ h3.display-5 {
 }
 
 .form-control{
-    width: 50%;
+    height: 100%;
 }
 
-.col-form-label {
-    width: 50%;
-}
 
 /* footer */
 
@@ -244,4 +255,97 @@ footer span a:hover{
 
 .cursor.typing {
     animation: none;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 900px) {
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+  
+    .navbar-dark .navbar-nav .nav-item .nav-link{
+        padding: 10px 10px;
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .main .container .text-1 {
+        font-size: 20px;
+    }
+
+    .main .container .text-2 {
+        font-size: 55px;
+    }
+
+    .main .container .text-3 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-brand {
+        padding-left: 25px;
+        font-size: 1.5rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-item .nav-link{
+        padding: 10px 20px;
+    }
+
+    .main {
+        background: url(./img/pp1-600px.jpg) no-repeat;
+
+    }
+    .main .container .text-1 {
+        font-size: 1rem;
+    }
+
+    .main .container .text-2 {
+        font-size: 2rem;
+    }
+
+    .main .container .text-3 {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .navbar-brand {
+        padding-left: 25px;
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        margin-left: 20px;
+    }
+    .navbar-dark .navbar-nav .nav-item .nav-link{
+        padding: 10px 20px;
+    }
+
+    .main {
+        background: url(./img/pp1-320px.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        height: 100vh;
+    }
+      
+
+
+
 }
