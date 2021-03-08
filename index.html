@@ -29,9 +29,9 @@
             <div class="collapse navbar-collapse" id="nabeelNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></i>Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"></i>Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,7 @@
         <div class="heading-content">
             <h3>Hello, My name is</h3>
             <h1 class="display-3"> Nabeel Areiqat</h1>
-            <p class="lead">And I'm a <span class="typed-text"></span><span class="cursor typing"> &nbsp;</span></p>
+            <p class="lead">And I'm a <span class="typed-text"></span><span> &nbsp;</span></p>
 
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button" href="new.html">Contact Me</a>
@@ -60,16 +60,10 @@
             </div>
             <div class="col-lg-7">
                 <h1 class="text-center">About Me.</h1>
-                <span class="typed-text"></span><span class="cursor typing"> &nbsp;</span>
-                <p class="py-3 ml-3">I am <span class="font-weight-bold">Nabeel Areiqat </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, laborum illo minus porro enim voluptas dolores magni, omnis itaque voluptatem maiores perspiciatis, blanditiis eum veniam reprehenderit adipisci consectetur sint obcaecati?</p>
+                <p>I'm a <span class="typed-2"></span><span> &nbsp;</span></p>
+                <p class="py-3 ml-3">I am <span class="font-weight-bold">Nabeel Areiqat </span>and I am a Full-Stack Web developer. I love coding and creating amazing websites! I am looking for a junior developer position or internship.</p>
                 <h3 class="display-5 text-center"> Want to Connect: </h3>
-                <div class="socials text-center">
-                    
-                    <a class="btn btn-social-icon btn-github" href="http://github.com/nareiqat"><i role="img"
-                        aria-label="GitHub" class="fa fa-github"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="http://linkedin.com/in/nareiqat"><i
-                        class="fa fa-linkedin"></i></a>
-                </div>
+               
                 
             </div>
         </div>
@@ -117,6 +111,121 @@
            
         </div>
     </div>
+    <!-- skills section end -->
+
+    <!-- projects section -->
+
+    <div class="container projects-container" id="projects">
+        <div class="row">
+            <div class="col-sm-12 text-center pt-3"><h1 class="skills-head" style="color: black;">-Projects-</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+               <div class="card">
+                    <img class="card-img-top" src="img/covid19tracker.PNG" alt="Covid 19 tracker">
+                    <div class="card-body">
+                        <h5 class="card-title">Covid-19 WorldWide Tracker</h5>
+                        <p class="card-text text-dark">Built a Covid-19 tracker using ReactJs, Material UI and disease.sh API and hosted on google firbase.</p>
+                        <a href="https://covid-19tracker-ddfa6.web.app/" class="btn btn-danger">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/netflixUiclone.PNG" alt="Netflix Ui clone">
+                    <div class="card-body">
+                        <h5 class="card-title">NetFlix UI clone</h5>
+                        <p class="card-text text-dark">Built Netflix front page UI clone using ReactJs and Moviesdb API and hosted on google firebase.</p>
+                        <a href="https://netflix-clone-75ea7.web.app/" class="btn btn-danger">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/netflixUiclone.PNG" alt="Netflix Ui clone">
+                    <div class="card-body">
+                        <h5 class="card-title">NetFlix UI clone</h5>
+                        <p class="card-text text-dark">Built Netflix front page UI clone using ReactJs and Moviesdb API and hosted on google firebase.</p>
+                        <a href="https://netflix-clone-75ea7.web.app/" class="btn btn-danger">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- contact me -->
+    <div class="container-fluid contact-container" id="contact">
+       
+        <form id="contact-form" method="post" action="contact.php" role="form">
+            <h2 class="text-center">Contact Me!</h2>
+            <div class="messages"></div>
+
+            <div class="controls">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class ="col-form-label" for="form_name">Name *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-form-label" for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-form-label" for="form_phone">Phone</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="col-form-label" for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    
+    <footer class="container-fluid">
+        <div class="footer-container">
+            <div class="row">
+                 <div class="col">
+                     <div class="socials text-center">
+                        <a class="btn btn-social-icon btn-github" href="http://github.com/nareiqat"><i role="img"
+                        aria-label="GitHub" class="fab fa-github"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://linkedin.com/in/nareiqat"><i
+                        class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center pt-2">
+                   <span>Created By <a href="index.html">Nabeel Areiqat</a> | <span class="far fa-copyright"></span> 2021 All right reserved.</span>
+                </div>
+               
+            </div>
+        </div>
+
+    </footer>
 
 
 
@@ -127,6 +236,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="main.js"></script>
 
 </body>

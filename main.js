@@ -1,47 +1,21 @@
-const textArray = ["Web Developer","Engineer","Student"]
-const typingDelay = 200;
-const erasingDelay = 100;
-// wait 2 seconds before erasing
-const newTextDelay = 2000;
 
-let textArrayIndex = 0;
-let charIndex = 0;
 
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector('.cursor')
+// typed text animation
 
-function type(){
-    if(charIndex < textArray[textArrayIndex].length){
-        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent+=textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type,typingDelay)
-    }else{
-        //erase
-        cursorSpan.classList.remove("typing")
-        setTimeout(erase,newTextDelay);
-    }
-}
+var typed = new Typed('.typed-text', {
+  strings: ["Web Developer", "Engineer", "Student"],
+  typeSpeed: 120,
+  backSpeed: 100,
+  backDelay:700,
+  loop:true,
 
-function erase(){
-    if(charIndex > 0){
-        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0,charIndex-1);
-        charIndex--;
-        setTimeout(erase,erasingDelay);
-    }else{
-        cursorSpan.classList.remove("typing")
-        textArrayIndex++;
-        if(textArrayIndex>=textArray.length)
-            textArrayIndex=0;
-            setTimeout(type,typingDelay + 1100);
-        
-        
-    }
-}
+});
 
-document.addEventListener('DOMContentLoaded',function(){
-    if(textArray.length){
-        setTimeout(type,newTextDelay);
-    }
-})
+var typed = new Typed('.typed-2', {
+  strings: ["Web Developer", "Engineer", "Student"],
+  typeSpeed: 120,
+  backSpeed: 100,
+  backDelay:700,
+  loop:true,
+
+});
