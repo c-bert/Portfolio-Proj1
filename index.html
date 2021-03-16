@@ -6,33 +6,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./style.css" />
+    
 
     <title>Nabeel Areiqat PortFolio</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <section id="header">
-        <nav class="navbar navbar-expand-md navbar-dark sticky" role="navigation">
+    <div class ="container-fluid" id="navbar">
+        <nav class="navbar smart-scroll navbar-expand-md navbar-dark sticky" role="navigation">
             <div class="pulse">
                 <a class="navbar-brand" href="./index.html">Nabeel <span>Areiqat</span></a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList"
                 aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class="collapse navbar-collapse navy" id="navbarList">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Me</a>
@@ -50,67 +52,76 @@
             </div>
         </nav>
 
-    </section>
+    </div>
 
     <!-- navbar end -->
 
     <!-- main/intro sectio -->
-    <section class="main">
-        <div class="main-container">
-            <div class="text-1">Hello, my name is</div>
-            <div class="text-2">Nabeel <span style="color:crimson;">Areiqat</span></div>
-            <div class="text-3">And I'm a <span class="typed-text"></span></div>
+    <div id="main">
+        <div class="main-container ">
+           
+                    <div class="text-1">Hello, my name is</div>
+              
+                    <div class="text-2">Nabeel <span style="color:crimson;">Areiqat</span></div>
+               
+               
+                    <div class="text-3">And I'm a <span class="typed-text"></span></div>
+               
+            </div>
+                
         </div>
-    </section>
+         
+       
+    </div>
     <!-- intro end -->
 
 
     <!-- About Me section -->
-    <section id="about">
+    <div id="about">
         <div class="about-container container">
             <div class="about-heading text-center">
                 <h1>About Me</h1>
-                <hr class="w-50 mx-auto pb-5">
-            </div>
+                <hr class="w-50 mx-auto">
 
+            </div>
+            
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="img-container">
                         <img src="img/hikedited.jpg" alt="selfie" class="img-fluid">
-                    </div> 
+                    </div>
                 </div>
 
                 <div class="col-md-6">
                     <br>
-                    <p><span class="typed-2"></span></p>
-                    <p>Hello, my name is <span class="font-weight-bold">Nabeel Areiqat </span>and I currently a Full-Stack
+                    <!-- <p><span class="typed-2"></span></p> -->
+                    <p>Hello, my name is <span class="font-weight-bold">Nabeel Areiqat </span>and I currently a
+                        Full-Stack
                         Web
-                        developer student at NuCamp bootcamp. I love coding and creating amazing websites! I am currently
+                        developer student at NuCamp bootcamp. I love coding and creating amazing websites! I am
+                        currently
                         looking for a junior developer position
-                        or an internship inorder to gain experience and bring my skills to the table. You can check out my
+                        or an internship inorder to gain experience and bring my skills to the table. You can check out
+                        my
                         projects and skills below.
                     </p>
                     <hr>
 
-                    <p>Feel free to send me a <a href="#connect">message</a> or connect on 
-                        <a href="https://www.linkedin.com/in/nareiqat/" target="_blank"  rel="noopener noreferrer"><i class="fab fa-linkedin"
-                            aria-hidden="true"></i>
-                        </a>
-                    </p>
 
                 </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+
     <!-- About section End -->
 
     <!-- skills section -->
     <div id="skills">
         <div class="skills-container  container-fluid">
             <h1 class="text-center skills-head">Skills</h1>
-            <hr class=" w-50 mx-auto">
-            <div class="row skills-row">
+            <hr class="w-50 mx-auto">
+            <div class="skills-wrapper">
+                <div class="row skills-row">
                 <div class="col">
                     <div class="skills-icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
                     <p class="text-light">HTML5</p>
@@ -134,16 +145,17 @@
                     <p class="text-light">NodeJs</p>
                 </div>
                 <div class="col">
-                    <div class="skills-icon"><i class="fab fa-react" aria-hidden="true"></i></div>
-                    <p class="text-light">ReactJs</p>
+                    <div class="skills-icon"><i class="fab fa-aws" aria-hidden="true"></i></div>
+                    <p class="text-light">aws</p>
                 </div>
                 <div class="col">
                     <div class="skills-icon"><i class="fab fa-github"></i></div>
                     <p class="text-light">Git</p>
                 </div>
                 <div class="col">
-                    <div class="skills-icon"><i class="fab fa-bootstrap"></i></i></div>
-                    <p class="text-light">Bootstrap</p>
+                    <div class="skills-icon"><i class="fab fa-react" aria-hidden="true"></i></div>
+                    <p class="text-light">React</p>
+
                 </div>
             </div>
             <div class="row skills-row">
@@ -152,115 +164,195 @@
                     <p class="text-light">Java</p>
                 </div>
                 <div class="col">
+
+                    <div class="skills-icon"><img src="https://img.icons8.com/nolan/96/matlab.png" /></div>
+                    <p class="text-light">Matlab</p>
+                </div>
+                 <div class="col">
+                    <div class="skills-icon"><i class="fab fa-bootstrap"></i></i></div>
+                    <p class="text-light">Bootstrap</p>
+                </div>
+                <div class="col">
                     <div class="skills-icon"><i class="fa fa-database" aria-hidden="true"></i></div>
                     <p class="text-light">Mongo/SQL</p>
                 </div>
-                <div class="col">
-                    <div class="skills-icon"><i class="fab fa-aws" aria-hidden="true"></i></div>
-                    <p class="text-light">aws</p>
-                </div>
             </div>
+            </div>
+            
         </div>
     </div>
-
     <!-- skills section end -->
 
     <!-- projects section -->
     <div id="projects">
         <div class="container projects-container">
-            <div class="row">
-                <div class="col-sm-12 text-center pt-3">
-                    <h1 class="projects-head">Projects</h1>
-                </div>
-            </div>
-            <div class="row">
+            <h1 class="projects-head text-center">Projects</h1>
+            <hr class="w-50 mx-auto">
 
-                <div class="col-sm-12 col-md-4">
-
+            <div class="row pt-5 ">
+                <!-- Covid 19 Tracker -->
+                <div class="col-sm-12 col-md-4 ">
                     <div class="card-wrapper">
                         <div class="content">
-                            <div class="card-front z-depth-2">
-                                <img class="card-img-top" src="img/covid19tracker.PNG" alt="Covid 19 tracker">
-                        
+                            <div class="card-front card-1">
                                 <h5 class="card-title front">Covid-19 WorldWide Tracker</h5>
-                                <p class="card-text text-dark">Built a Covid-19 tracker using ReactJs, Material UI and
-                                disease.sh API and hosted on google firbase.</p>
-                           
-                                
                             </div>
-                            <div class="card-back z-depth-2">
+                            <div class="card-back">
                                 <div class="card-body">
-                                    <div class="card-title">Covid-19 Tracker</div>
-                                    <p class="card-text">llllllllllll</p>
-                                    <a href="https://covid-19tracker-ddfa6.web.app/" target="_blank"  rel="noopener noreferrer" class="btn btn-danger">Visit Site</a>
+                                    <p class="card-text">Built a Covid-19 tracker using ReactJs, Material UI
+                                        and
+                                        disease.sh API and hosted on google firbase.</p>
+                                    <div class="btn-container">
+                                        <a href="https://covid-19tracker-ddfa6.web.app/" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-danger">Visit Site</a>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                <!-- Netflix Clone -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card-wrapper">
+                        <div class="content">
+                            <div class="card-front card-2">
+                                <!-- <img class="card-img-top" src="img/covid19tracker.PNG" alt="Covid 19 tracker"> -->
 
-    <!-- contact me -->
-    <div class="container-fluid contact-container" id="contact">
-        <div class="card">
-            <form id="contact-form" method="post" action="contact.php" role="form">
-                <h2 class="text-center">Contact Me!</h2>
-                <div class="messages"></div>
-
-                <div class="controls">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="col-form-label" for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control"
-                                    placeholder="Please enter your firstname *" required="required"
-                                    data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                                <h5 class="card-title front">Netflix UI Clone</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="col-form-label" for="form_email">Email *</label>
-                                <input id="form_email" type="email" name="email" class="form-control"
-                                    placeholder="Please enter your email *" required="required"
-                                    data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
+                            <div class="card-back">
+                                <div class="card-body">
+                                    <p class="card-text">Built a Netflix movie page UI Clone using ReactJs and
+                                        moviedb api
+                                        . Hosted on google firbase.</p>
+                                    <!-- <p class="card-text"></p> -->
+                                    <div class="btn-container">
+                                        <a href="https://netflix-clone-75ea7.web.app/" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-danger">Visit Site</a>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="col-form-label" for="form_phone">Phone</label>
-                                <input id="form_phone" type="tel" name="phone" class="form-control"
-                                    placeholder="Please enter your phone">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="col-form-label" for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control"
-                                    placeholder="Message for me *" rows="4" required="required"
-                                    data-error="Please,leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message">
                         </div>
                     </div>
                 </div>
 
-            </form>
+                <!-- Nucampsite -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card-wrapper">
+                        <div class="content">
+                            <div class="card-front card-3">
+                                <!-- <img class="card-img-top" src="img/covid19tracker.PNG" alt="Covid 19 tracker"> -->
+
+                                <h5 class="card-title front">NucampSite</h5>
+                            </div>
+                            <div class="card-back ">
+                                <div class="card-body">
+                                    <p class="card-text">Built a simple lodgeing and camping website using
+                                        bootstrap & jquery. Hosted on netlify</p>
+                                    <!-- <p class="card-text"></p> -->
+                                    <div class="btn-container">
+                                        <a href="https://eager-mccarthy-1d8dfc.netlify.app/" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-danger">Visit Site</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+
+    
+    <section id="contact" >
+
+        <!--Section heading-->
+        <h2 class="contact-title text-center">Contact Me</h2>
+        <hr class="w-50 bg-light mx-auto">
+        <!--Section description-->
+        <div class="card">
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+                    <form id="contact-form" name="contact-form" action="form.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="validateForm()">Submit</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+
+
+            </div>
         </div>
 
-    </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+
+
+
+
+
+
 
     <footer class="container-fluid">
         <div class="footer-container">
@@ -291,11 +383,13 @@
 
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="main.js"></script>
+    <!-- endbuild -->
 
 </body>
 
