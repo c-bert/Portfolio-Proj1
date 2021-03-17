@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: url(img\mountain.jpg);
+    background-image: url('/img/stars.jpg');
+    background-position: center;
     background-size: cover;
 }
 
@@ -86,7 +87,8 @@ body {
 
 #main {
     position:relative;
-    background: url(img\pp1edited.jpg) no-repeat center;
+    background-image: url(/img/pp1edited.jpg);
+    background-position: center;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
@@ -292,18 +294,18 @@ body {
 }
 
 .card-1 {
-    background: url(img\covid19tracker.PNG);
-    
+    background-image: url('/img/covid19tracker.PNG');
     background-size: cover;
 }
 
 .card-2 {
-    background: url(img\netflixUiclone.PNG) ;
+    background-image: url('/img/netflixUiclone.PNG') ;
     background-size: cover;
 }
 
 .card-3 {
-    background: url(img\nucampsite.PNG) no-repeat center ;
+    background-image: url('/img/nucampsite.PNG');
+    background-position: center;
     background-size: cover;
 
 }
