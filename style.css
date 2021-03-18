@@ -1,13 +1,17 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;     
    
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: url('/img/stars.jpg');
-    background-position: center;
+    background-color: black;
+   
+}
+
+#about, #skills, #projects , #contact {
+    background: url('/img/pexels-paul-cameron-1187972.jpg') no-repeat center fixed;
     background-size: cover;
 }
 
@@ -18,51 +22,46 @@ body {
     width: 100%;
     position: fixed;
     z-index: 10;
-
+    height: 100%;
+    overflow: hidden;
 }
-
 
 .navbar-brand{
     font-weight: 700;
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     padding-left: 50px;
+    color: white;
 }
 
 .navy {
     padding-right: 40px;
     width: 100%;
+    
 }
 
 .navbar-brand span {
     color: crimson;
 }
 
-.nav-item {
+
+#navbar .nav-link {
     font-weight: 600;
+    transition: transform 0.5s;
+    padding-right: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+
+#navbar .nav-link:hover{
+    color:crimson;
+    transform: scale(1.5);
+    padding: 5px 30px;
     text-transform: uppercase;
 
 }
 
-#header .nav-link {
-    font-weight: 600;
-    transition: transform 0.5s;
-}
-
-
-.navbar-dark .navbar-nav .nav-item .nav-link{
-    color: azure;
-    padding-right: 30px;
-    font-weight: 500;
-}
-
-
-.navbar-dark .navbar-nav .nav-item .nav-link:hover{
-    color:crimson;
-    transform: scale(1.5);
-    padding: 5px 30px;
-
-}
 
 .sticky{
     background-color:rgba(0,0,0,0.75);
@@ -258,23 +257,48 @@ body {
     font-size: 3rem;
     font-weight: 600;
 }
-.content {
-    position: relative;
-    width: 100%;
-    height: 70%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-
-}
 
 .card-wrapper {
     width: 20rem;
-    height: 600px;
+    height: 400px;
     perspective: 1000px;
     padding:0px 20px ;
+    /* display; */
 
 }
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#projects .card-wrapper:hover .content {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    padding: 50px 20px;
+    border: 5px solid white;
+    border-radius: 10px;
+   
+}
+
+
 
 #projects .card-title{
     font-size: 1.2rem;
@@ -315,27 +339,7 @@ body {
     font-weight: 500;
 }
 
-.card-wrapper:hover .content {
-    transform: rotateY(180deg);
-    transition: ease 1s;
-}
 
-.card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: black;
-    backface-visibility: hidden;
-}
-
-
-.card-back {
-    transform: rotateY(180deg);
-    padding: 50px 20px;
-    border: 5px solid white;
-    border-radius: 10px;
-   
-}
 
 #projects .card-back p.card-text {
     font-size: 1.3rem;
@@ -522,7 +526,7 @@ footer span a:hover{
         padding-left: 20px;
     }
 
-    .navbar-dark .navbar-nav .nav-item .nav-link:hover{
+    #navbar .nav-link:hover{
         color:crimson;
         transform: none;
         padding: 5px 0px;
